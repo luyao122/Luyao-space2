@@ -2,7 +2,7 @@
 import { createRoot } from 'react-dom/client';
 import './styles.css';
 
-const ASSET_BASE = '/Luyao-space2/assets';
+const ASSET_BASE = import.meta.env.BASE_URL.replace(/\/$/, '') + '/assets';
 
 const navItems = [
   ['My Growth and Life', '#growth'],
