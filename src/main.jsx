@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+﻿import React, { useState, useRef, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
 
@@ -10,10 +10,6 @@ const navItems = [
 ];
 
 const galleryImages = [
-  'memory-01.jpg',
-  'memory-02.jpg',
-  'memory-03.jpg',
-  'memory-04.jpg',
   'memory-05.jpg',
   'memory-06.jpg',
   'memory-07.jpg',
@@ -42,7 +38,7 @@ const growthContent = {
 };
 
 const workContent = {
-  'Independent E-commerce Seller': 'Built and managed my own online store from scratch �� sourcing products, optimizing listings, handling customer service, and gradually growing a loyal customer base. This experience taught me resilience, attention to detail, and the value of honest business practices.',
+  'Independent E-commerce Seller': 'Built and managed my own online store from scratch 锟斤拷 sourcing products, optimizing listings, handling customer service, and gradually growing a loyal customer base. This experience taught me resilience, attention to detail, and the value of honest business practices.',
   'Cross-border E-commerce Operator': 'Operated cross-border e-commerce platforms, bridging Chinese manufacturers with international markets. Managed product categorization, pricing strategies, logistics coordination, and market research to expand sales channels.',
   'Foreign Trade Specialist': 'Engaged in foreign trade communications, including supplier negotiations, order tracking, and international client relations. Developed strong cross-cultural communication skills and a keen understanding of global market dynamics.',
 };
@@ -235,7 +231,7 @@ function App() {
             <CleanVideo
               className="small-motion"
               src="/assets/intent-motion_NT3KLHqs.mp4"
-              poster="/assets/memory-11.jpg"
+              poster=""
             />
           </div>
         </div>
@@ -324,3 +320,5 @@ function CleanVideo({ className, src, poster }) {
 }
 
 createRoot(document.getElementById('root')).render(<App />);
+
+
