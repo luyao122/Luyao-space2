@@ -15,9 +15,7 @@ const galleryImages = [
   'memory-07.jpg',
   'memory-08.jpg',
   'memory-09.jpg',
-  'memory-10.jpg',
-  'memory-11.jpg',
-];
+  'memory-10.jpg'\];
 
 const growthContent = {
   Hobbies: {
@@ -198,7 +196,7 @@ function App() {
       <section id="intention" className="section section-intention">
         <div className="section-inner split reverse">
           <div className="media-collage">
-            {galleryImages.slice(4, 9).map((image, index) => (
+            {galleryImages.slice(4, 6).map((image, index) => (
               <img
                 key={image}
                 src={'/assets/' + image}
@@ -320,5 +318,8 @@ function CleanVideo({ className, src, poster }) {
 }
 
 createRoot(document.getElementById('root')).render(<App />);
+
+
+
 
 
