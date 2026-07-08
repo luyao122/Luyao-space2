@@ -68,10 +68,11 @@ function ExpandableModule({ id, label }) {
           <div className="module-video-container">
             <video
               ref={videoRef}
-              src={ASSET_BASE + "/" + videoSrc}
+              src={expanded ? ASSET_BASE + "/" + videoSrc : undefined}
               className="module-video"
               controls
               playsInline
+              preload="none"
             />
           </div>
         )}
@@ -158,7 +159,7 @@ function App() {
           muted
           loop
           playsInline
-          preload="auto"
+          preload="none"
           aria-hidden="true"
         />
         <div className="section-inner work-layout">
@@ -269,7 +270,7 @@ function Hero() {
         muted
         loop
         playsInline
-        preload="auto"
+        preload="none"
         aria-hidden="true"
       />
       <nav className="nav" aria-label="Primary navigation">
@@ -311,7 +312,7 @@ function CleanVideo({ className, src, poster }) {
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="none"
         disablePictureInPicture
         controlsList="nodownload nofullscreen noplaybackrate"
       />
