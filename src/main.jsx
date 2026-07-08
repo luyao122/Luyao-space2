@@ -2,6 +2,8 @@
 import { createRoot } from 'react-dom/client';
 import './styles.css';
 
+const ASSET_BASE = '/Luyao-space2/assets';
+
 const navItems = [
   ['My Growth and Life', '#growth'],
   ['My Work Experience', '#work'],
@@ -66,7 +68,7 @@ function ExpandableModule({ id, label }) {
           <div className="module-video-container">
             <video
               ref={videoRef}
-              src={"/assets/" + videoSrc}
+              src={ASSET_BASE + "/" + videoSrc}
               className="module-video"
               controls
               playsInline
@@ -78,7 +80,7 @@ function ExpandableModule({ id, label }) {
             {images.map((img, idx) => (
               <img
                 key={img + "-" + idx}
-                src={"/assets/" + img}
+                src={ASSET_BASE + "/" + img}
                 alt={label + " photo " + (idx + 1)}
                 loading="lazy"
                 className="module-gallery-img"
@@ -133,7 +135,7 @@ function App() {
             <div className="growth-photo-area">
               <img
                 className="growth-portrait"
-                src="/assets/my-photo.jpg"
+                src={ASSET_BASE + "/my-photo.jpg"}
                 alt="Luyao"
               />
             </div>
@@ -151,7 +153,7 @@ function App() {
       <section id="work" className="section section-work">
         <video
           className="work-bg-video"
-          src="/assets/work-bg_WjcdbB1D.mp4"
+          src={ASSET_BASE + "/work-bg_WjcdbB1D.mp4"}
           autoPlay
           muted
           loop
@@ -199,7 +201,7 @@ function App() {
             {galleryImages.slice(4, 6).map((image, index) => (
               <img
                 key={image}
-                src={'/assets/' + image}
+                src={ASSET_BASE + "/" + image}
                 alt={'Company intention visual ' + (index + 1)}
                 loading="lazy"
               />
@@ -228,7 +230,7 @@ function App() {
             </p>
             <CleanVideo
               className="small-motion"
-              src="/assets/intent-motion_NT3KLHqs.mp4"
+              src={ASSET_BASE + "/intent-motion_NT3KLHqs.mp4"}
               poster=""
             />
           </div>
@@ -262,7 +264,7 @@ function Hero() {
     <section className="hero" aria-label="Luyao's Space hero">
       <video
         className="hero-video-bg"
-        src="/assets/hero-bg.mp4"
+        src={ASSET_BASE + "/hero-bg.mp4"}
         autoPlay
         muted
         loop
