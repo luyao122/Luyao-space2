@@ -15,7 +15,7 @@ const galleryImages = [
   'memory-07.jpg',
   'memory-08.jpg',
   'memory-09.jpg',
-  'memory-10.jpg'\];
+  'memory-10.jpg']
 
 const growthContent = {
   Hobbies: {
@@ -318,6 +318,7 @@ function CleanVideo({ className, src, poster }) {
 }
 
 createRoot(document.getElementById('root')).render(<App />);
+
 
 
 
