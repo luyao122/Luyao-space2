@@ -7,7 +7,7 @@ const ASSET_BASE = import.meta.env.BASE_URL.replace(/\/$/, '') + '/assets';
 const navItems = [
   ['My Growth and Life', '#growth'],
   ['My Work Experience', '#work'],
-  ['My Understanding and Intention of the Company', '#intention'],
+  ['Self-introduction', '#intention'],
   ['Contact Information', '#contact'],
 ];
 
@@ -209,25 +209,23 @@ function App() {
             ))}
           </div>
           <div className="section-copy reveal-panel amber">
-            <p className="eyebrow">03 / Intention</p>
-            <h2>My Understanding and Intention of the Company</h2>
+            <p className="eyebrow">03 / Self-introduction</p>
+            <h2>Self-introduction</h2>
             <p>
-              I know that Italic was founded in San Francisco in 2018. It is a light luxury online brand covering the entire chain of product development, supply chain and e-commerce. The brand abandons the premium of luxury brands and creates affordable light luxury products without logos in the same factories as big-name brands.
+              Welcome to my personal website. Let me briefly introduce myself: My name is Luyao.
             </p>
             <p>
-              I highly recognize its business philosophy in the industry and am eager to join the team.
+              I have strong self-drive, learning ability, creativity, and the capacity to quickly acquire skills through hands-on experience.
+              From 0 to 1 execution ability. Composite practical experience — content creation, visual design, email marketing, client development, data analysis, and overseas negotiation are all areas I can handle.
             </p>
             <p>
-              After the online interview, I cherish this opportunity very much. I built this website to let you know me better.
+              Data-driven decision-making. I let data speak, optimize based on data, and never rely on gut feeling alone.
             </p>
             <p>
-              However, since it's my first time using AI to build a website, some details may be a bit rough.
+              Outstanding communication and execution. I can communicate efficiently across different contexts and situations.
             </p>
             <p>
-              Finally, I hope I can be given this opportunity. Please believe that I can be competent for this position and become an excellent employee!
-            </p>
-            <p className="signature">
-              ------- Luyao
+              If we ever have the opportunity to work together, you'll discover even more surprises!
             </p>
             <CleanVideo
               className="small-motion"
